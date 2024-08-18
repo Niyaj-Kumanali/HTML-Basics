@@ -1,0 +1,273 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+
+<body>
+    <a href="index.html"><button>Go To Index</button></a>
+
+    <dl>
+        <dt>
+            <h1>The < form> Element:</h1>
+        </dt>
+        <dd>
+            <li>The HTML < form> element is used to create an HTML form for user input:</li>
+            <li>Syntax: <br>
+                < form> <br>
+                    . <br>
+                    form elements <br>
+                    . <br>
+                    < /form>
+            </li>
+            <li>The < form> element is a container for different types of input elements, such as: text fields,
+                    checkboxes, radio buttons, submit buttons, etc.</li>
+
+
+        </dd>
+        <dt>
+            <h1>The < input> Element:</h1>
+        </dt>
+        <dd>
+            <li>The HTML < input> element is the most used form element.</li>
+            <li>An < input> element can be displayed in many ways, depending on the type attribute.</li>
+            <li>
+                <dl>
+                    <dt>Here are some examples:</dt>
+                    <dd>
+                        <table border="5" cellspacing="5">
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    < input type="text">
+                                </td>
+                                <td>Displays a single-line text input field</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    < input type="radio">
+                                </td>
+                                <td>Displays a radio button (for selecting one of many choices)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    < input type="checkbox">
+                                </td>
+                                <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    < input type="submit">
+                                </td>
+                                <td>Displays a submit button (for submitting the form)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    < input type="button">
+                                </td>
+                                <td>Displays a clickable button</td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </li>
+            <dl>
+                <dt>
+                    <h2>Text Fields</h2>
+                </dt>
+                <dd>The < input type="text"> defines a single-line input field for text input. </dd>
+                <dd>
+                    <dl>
+                        <dt>Example:</dt>
+                        <dd>
+                            < form> <br>
+                                < label for="fname">First name:< /label><br>
+                                        < input type="text" id="fname" name="fname"><br>
+                                            < label for="lname">Last name:< /label><br>
+                                                    < input type="text" id="lname" name="lname"> <br>
+                                                        < /forms>
+                        </dd>
+                    </dl>
+                </dd>
+                <dd>The < input type="text"> defines a single-line input field for text input. </dd>
+                <dd>
+                    <dl>
+                        <dt>Example:</dt>
+                        <dd>
+                            <table border="2" cellspacing="5">
+                                <tr>
+                                    <td align="left">
+                                        < form> <br>
+                                            < label for="fname">First name:< /label><br>
+                                                    < input type="text" id="fname" name="fname"><br>
+                                                        < label for="lname">Last name:< /label><br>
+                                                                < input type="text" id="lname" name="lname"> <br>
+                                                                    < /form>
+                                    </td>
+                                    <td align="left">
+                                        <form>
+                                            <label for="fname">First name:</label><br>
+                                            <input type="text" id="fname" name="fname"><br>
+                                            <label for="lname">Last name:</label><br>
+                                            <input type="text" id="lname" name="lname"><br>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </dd>
+                    </dl>
+                </dd>
+                <dt>
+                    <h3>The < label> Element</h3>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>The < label> tag defines a label for many form elements.</li>
+                        <li>The <label> element is useful for screen-reader users, because the screen-reader will read
+                                out loud the label when the user focuses on the input element.</li>
+                        <li>The < label> element also helps users who have difficulty clicking on very small regions
+                                (such as radio buttons or checkboxes) - because when the user clicks the text within the
+                                < label> element, it toggles the radio button/checkbox.</li>
+                        <li>The for attribute of the < label> tag should be equal to the id attribute of the < input>
+                                    element to bind them together.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <h2>Radio Buttons</h2>
+                </dt>
+                <dd>The < input type="radio"> defines a radio button.</dd>
+                <dd>Radio buttons let a user select ONE of a limited number of choices.</dd>
+                <dd>Ex:</dd>
+                <dd>
+                    <table border="2" cellspacing="5">
+                        <tr>
+                            <td align="left">
+                                < form> <br>
+                                    < input type="radio" id="html" name="fav_language" value="HTML"><br>
+                                        < label for="html">HTML< /label><br>
+                                                < input type="radio" id="css" name="fav_language" value="CSS"><br>
+                                                    < label for="css">CSS< /label><br>
+                                                            < input type="radio" id="javascript" name="fav_language"
+                                                                value="JavaScript"><br>
+                                                                < label for="javascript">JavaScript< /label> <br>
+                                                                        < /form>
+                            </td>
+                            <td align="left">
+                                <form>
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">HTML</label><br>
+                                    <input type="radio" id="css" name="fav_language" value="CSS">
+                                    <label for="css">CSS</label><br>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                    <label for="javascript">JavaScript</label>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>
+                    <h2>Checkboxes</h2>
+                </dt>
+                <dd>The < input type="checkbox"> defines a checkbox</dd>
+                <dd>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</dd>
+                <dd>Ex:</dd>
+                <dd>
+                    <table border="2" cellspacing="5">
+                        <tr>
+                            <td align="left">
+                                < form> <br>
+                                    < input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><br>
+                                        < label for="vehicle1"> I have a bike</><br>
+                                        < input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><br>
+                                            < label for="vehicle2"> I have a car</><br>
+                                            < input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><br>
+                                                < label for="vehicle3"> I have a boat</> <br>
+                                                < /form>
+                            </td>
+                            <td align="left">
+                                <form>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> I have a bike</label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                    <label for="vehicle2"> I have a car</label><br>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                    <label for="vehicle3"> I have a boat</label>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>
+                    <h2>The Submit Button</h2>
+                </dt>
+                <dd>The < input type="submit"> defines a button for submitting the form data to a form-handler.</dd>
+                <dd>The form-handler is typically a file on the server with a script for processing input data.</dd>
+                <dd>The form-handler is specified in the form's 'action' attribute.</dd>
+                <dd>Ex:</dd>
+                <dd>
+                    <table border="2" cellspacing="5">
+                        <tr>
+                            <td align="left">
+                                < form action="table.html"> <br>
+                                    < label for="fname">First name:</><br>
+                                    < input type="text" id="fname" name="fname" value="John"><br>
+                                        < label for="lname">Last name:</><br>
+                                        < input type="text" id="lname" name="lname" value="Doe">
+                                            < input type="submit" value="Submit"> <br>
+                                                < /form>
+                            </td>
+                            <td align="left">
+                                <form action="table.html">
+                                    <label for="fname">First name:</label><br>
+                                    <input type="text" id="fname" name="fname" value="John"><br>
+                                    <label for="lname">Last name:</label><br>
+                                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <h2>The Button</h2>
+                </dt>
+                <dd>The < input type="button"> defines a button.</dd>
+                <dd>Ex:</dd>
+                <dd>
+                    <table border="2" cellspacing="5">
+                        <tr>
+                            <td align="left">
+                                < form> <br>
+                                    < input type="button" value="Sign Up"> <br>
+                                        < /form>
+                            </td>
+                            <td align="left">
+                                <form>
+                                    <input type="button" value="Sign Up">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </dd>
+            </dl>
+
+        </dd>
+    </dl>
+</body>
+
+</html>
